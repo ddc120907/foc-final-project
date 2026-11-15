@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play the Game | Fundamentals of Computing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fredoka:wght@700&family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tictactoe.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">TIC TAC TOE</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="videos.html">Video Gallery</a></li>
+                <li><a href="game.html">Game</a></li>
+                <li><a href="documentation.html">Documentation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="game-area">
+
+        <!-- The Game -->
+        <h1>♡ Tic Tac Toe ♡</h1>
+        <h2 id="game-status">Player O's turn</h2>
+        <hr>
+
+        <div id="game-board">
+            <div data-cell-index="0" class="game-cell"></div>
+            <div data-cell-index="1" class="game-cell"></div>
+            <div data-cell-index="2" class="game-cell"></div>
+            <div data-cell-index="3" class="game-cell"></div>
+            <div data-cell-index="4" class="game-cell"></div>
+            <div data-cell-index="5" class="game-cell"></div>
+            <div data-cell-index="6" class="game-cell"></div>
+            <div data-cell-index="7" class="game-cell"></div>
+            <div data-cell-index="8" class="game-cell"></div>
+        </div>
+
+        <button id="game-restart-button">Restart Game</button>
+
+        <!-- How to Play -->
+        <section class="game-info">
+            <h2>How to Play</h2>
+            <ol>
+                <li>Two players take turns. Player O goes first, then Player X.</li>
+                <li>Click an empty square to place your mark.</li>
+                <li>The first player to get three marks in a row (across, down, or diagonally) wins, and the winning squares turn green.</li>
+                <li>If all nine squares are filled and nobody has won, the game is a draw.</li>
+                <li>Click Restart Game to start over.</li>
+            </ol>
+        </section>
+
+        <!-- How the Code Works -->
+        <section class="game-info">
+            <h2>How the Code Works</h2>
+            <p>
+                The game is built with HTML, CSS, and JavaScript. HTML creates the nine squares, CSS arranges them into a 3x3 grid, and JavaScript runs the game logic. The board is stored in an array of nine items that start empty and fill with "O" or "X" as players take turns. When a square is clicked, the code first checks that the game isn't over and the square is empty, then places the current player's mark. After every move, it compares the board against a list of eight winning combinations (three rows, three columns, and two diagonals). If all three squares in a combination match, that player wins and those squares turn green. If the board fills up with no winner, the game declares a draw. The restart button clears the array and the squares and gives the first turn back to Player O.
+            </p>
+        </section>
+
+    </main>
+
+    <script src="js/tictactoe.js"></script>
+</body>
+</html>

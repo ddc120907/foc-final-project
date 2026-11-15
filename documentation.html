@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation | Fundamentals of Computing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">TIC TAC TOE</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="videos.html">Video Gallery</a></li>
+                <li><a href="game.html">Game</a></li>
+                <li><a href="documentation.html">Documentation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Documentation Heading Section -->
+    <section class="documentation-hero">
+        <div class="documentation-heading">
+            <span>OUR PROJECT RESOURCES</span>
+            <h1>Project Documentation</h1>
+            <p>
+                Explore the development, planning, and resources
+                behind our Fundamentals of Computing project.
+            </p>
+        </div>
+    </section>
+
+    <!-- Documentation Resources Section -->
+    <section class="documentation-content">
+
+        <div class="documentation-title">
+            <h2>Resources &amp; Evidence</h2>
+            <p>Our written report, presentation slides, and development evidence.</p>
+        </div>
+
+        <div class="documentation-container">
+
+            <!-- Written Report and Presentation -->
+            <div class="documentation-card">
+                <h3>Written Report &amp; Presentation</h3>
+                <p>Access our written project report and presentation slides.</p>
+                <a href="PASTE-REPORT-LINK-HERE" class="doc-button" target="_blank">Written Report</a>
+                <a href="https://canva.link/oj66idwk6z0366d" class="doc-button" target="_blank">Presentation Slides</a>
+            </div>
+
+            <!-- Testing Log -->
+            <div class="documentation-card">
+                <h3>Testing Log</h3>
+                <p>How we tested the game to make sure it works correctly.</p>
+                <table>
+                    <tr><th>Test</th><th>Expected</th><th>Result</th></tr>
+                    <tr><td>Click an empty square</td><td>Mark appears</td><td>Pass</td></tr>
+                    <tr><td>Click a taken square</td><td>Nothing changes</td><td>Pass</td></tr>
+                    <tr><td>Three in a row</td><td>Winner shown, squares green</td><td>Pass</td></tr>
+                    <tr><td>Fill board, no winner</td><td>"It's a draw!"</td><td>Pass</td></tr>
+                    <tr><td>Click after game ends</td><td>No more moves</td><td>Pass</td></tr>
+                    <tr><td>Restart button</td><td>Board clears, O's turn</td><td>Pass</td></tr>
+                </table>
+            </div>
+
+            <!-- Code Snippet -->
+            <div class="documentation-card">
+                <h3>Code Snippet</h3>
+                <p>The list of winning combinations the game checks after every move (from tictactoe.js).</p>
+<pre><code>let winningCombinations = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6]
+];</code></pre>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
