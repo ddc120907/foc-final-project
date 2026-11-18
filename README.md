@@ -3,7 +3,7 @@
 This is our CMPS1134 Fundamentals of Computing final project: a multi-page website built with HTML, CSS, and JavaScript, featuring an interactive two-player Tic Tac Toe game.
 
 ## Live Website
-PASTE YOUR GITHUB PAGES LINK HERE
+https://ddc120907.github.io/foc-final-project/
 
 ## Pages
 - **Home:** course description and team mission
